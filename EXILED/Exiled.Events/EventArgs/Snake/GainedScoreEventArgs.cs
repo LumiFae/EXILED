@@ -1,8 +1,7 @@
-﻿using Exiled.API.Features.Items;
-
-namespace Exiled.Events.EventArgs.Snake
+﻿namespace Exiled.Events.EventArgs.Snake
 {
-    using Exiled.Events.EventArgs.Interfaces;
+    using Exiled.API.Features.Items;
+    using Interfaces;
     using InventorySystem.Items.Keycards.Snake;
 
     /// <summary>

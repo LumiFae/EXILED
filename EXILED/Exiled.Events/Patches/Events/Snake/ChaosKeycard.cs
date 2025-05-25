@@ -1,11 +1,9 @@
-﻿using Exiled.Events.Attributes;
-
-namespace Exiled.Events.Patches.Events.Snake
+﻿namespace Exiled.Events.Patches.Events.Snake
 {
     using System.Collections.Generic;
     using System.Reflection.Emit;
 
-    using Exiled.API.Enums;
+    using Attributes;
     using Exiled.API.Features.Items;
     using HarmonyLib;
     using InventorySystem.Items.Keycards;
@@ -13,6 +11,9 @@ namespace Exiled.Events.Patches.Events.Snake
 
     using static HarmonyLib.AccessTools;
 
+    /// <summary>
+    /// Patches <see cref="ChaosKeycardItem.ServerProcessCustomCmd" />.
+    /// </summary>
     [EventPatch(typeof(Handlers.Snake), nameof(Handlers.Snake.GainedScore))]
     [EventPatch(typeof(Handlers.Snake), nameof(Handlers.Snake.GameOver))]
     [EventPatch(typeof(Handlers.Snake), nameof(Handlers.Snake.NewGame))]

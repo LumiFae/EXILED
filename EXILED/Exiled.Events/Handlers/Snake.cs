@@ -1,25 +1,27 @@
-﻿using Exiled.Events.EventArgs.Snake;
-
-namespace Exiled.Events.Handlers
+﻿namespace Exiled.Events.Handlers
 {
-    using Exiled.Events.Features;
+    using Exiled.Events.EventArgs.Snake;
+    using Features;
 
+    /// <summary>
+    /// Handles Snake related events.
+    /// </summary>
     public class Snake
     {
         /// <summary>
         /// Invoked when gaining score in Snake.
         /// </summary>
-        public static Event<GainedScoreEventArgs> GainedScore = new();
+        public static Event<GainedScoreEventArgs> GainedScore { get; set; } = new();
 
         /// <summary>
         /// Invoked when a player loses in Snake.
         /// </summary>
-        public static Event<GameOverEventArgs> GameOver = new();
+        public static Event<GameOverEventArgs> GameOver { get; set; } = new();
 
         /// <summary>
         /// Invoked when a player starts a new game.
         /// </summary>
-        public static Event<NewGameEventArgs> NewGame = new();
+        public static Event<NewGameEventArgs> NewGame { get; set; } = new();
 
         /// <summary>
         /// Called when a player gains score in Snake.
