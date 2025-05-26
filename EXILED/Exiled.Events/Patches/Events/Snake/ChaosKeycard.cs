@@ -1,4 +1,11 @@
-﻿namespace Exiled.Events.Patches.Events.Snake
+﻿// -----------------------------------------------------------------------
+// <copyright file="ChaosKeycard.cs" company="ExMod Team">
+// Copyright (c) ExMod Team. All rights reserved.
+// Licensed under the CC BY-SA 3.0 license.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace Exiled.Events.Patches.Events.Snake
 {
     using System.Collections.Generic;
     using System.Reflection.Emit;

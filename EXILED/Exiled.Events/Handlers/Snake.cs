@@ -1,5 +1,14 @@
-﻿namespace Exiled.Events.Handlers
+﻿// -----------------------------------------------------------------------
+// <copyright file="Snake.cs" company="ExMod Team">
+// Copyright (c) ExMod Team. All rights reserved.
+// Licensed under the CC BY-SA 3.0 license.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace Exiled.Events.Handlers
 {
+#pragma warning disable SA1623 // Property summary documentation should match accessors
+
     using Exiled.Events.EventArgs.Snake;
     using Features;
 

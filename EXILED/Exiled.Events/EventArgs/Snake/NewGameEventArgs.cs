@@ -1,11 +1,18 @@
-﻿namespace Exiled.Events.EventArgs.Snake
+﻿// -----------------------------------------------------------------------
+// <copyright file="NewGameEventArgs.cs" company="ExMod Team">
+// Copyright (c) ExMod Team. All rights reserved.
+// Licensed under the CC BY-SA 3.0 license.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace Exiled.Events.EventArgs.Snake
 {
     using Exiled.API.Features.Items;
     using Interfaces;
     using InventorySystem.Items.Keycards.Snake;
 
     /// <summary>
-    /// Contains all information when a player starts a new snake game
+    /// Contains all information when a player starts a new snake game.
     /// </summary>
     public class NewGameEventArgs : ISnakeEvent
     {
